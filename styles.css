@@ -462,7 +462,7 @@ sup {
 /* -----------------END RESET-------------------- */
 
 body {
-  background-color: slategrey;
+  background-color: #ABC;
 }
 
 h3 {
@@ -478,7 +478,7 @@ h3 {
   color: black;
   text-align: center;
   width: 100%;
-  background-color: white;
+  background-color: #CDE;
   padding-top: 1%;
   padding-bottom: 1%;
 }
