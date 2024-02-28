@@ -461,74 +461,45 @@ sup {
 
 /* -----------------END RESET-------------------- */
 
-body {
-  background-color: #ABC;
-}
+body { background-color: #1D2C2F; }
 
-h3 {
-  font-size: 16px;
+h1 { font-size: 4em; }
+
+h2 { font-size: 3em; }
+
+h3 { font-size: 1.1em; }
+
+p { font-size: 1.1em; }
+
+#firstline {
+  display: none;
 }
 
 .pages {
   min-height: 100vh;
   margin: 0;
 }
-
-.pages h1 {
-  color: black;
+.pages h2 {
+  color: #FF474D;
+  background-color: black;
   text-align: center;
   width: 100%;
-  background-color: #CDE;
   padding-top: 1%;
   padding-bottom: 1%;
 }
 
-/*
-
-#label-about {
-  background:url('./gallery/heading_parallax_1.png');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+#logo {
+  padding: 0;
 }
-#label-releases {
-  background:url('./gallery/heading_parallax_3.png');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+#logo h1 {
+  color: #FF474D;
+  background-color: black;
+  margin: 0;
+  text-align: center;
 }
-#label-video {
-  background:url('./gallery/heading_parallax_2.png');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#label-gallery {
-  background:url('./gallery/heading_parallax_5.png');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#label-list {
-  background:url('./gallery/heading_parallax_4.png');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#firstline {
-  display: none;
-}
-
-*/
 
 /* ----top nav---- */
-/*
+
 #top-nav {
   top: 0;
   width: 100%;
@@ -576,25 +547,31 @@ h3 {
 .inSection h3 {
   color: black !important;
 }
-*/
+
 
 /* ----logo---- */
-/*
-#top {
+
+/*#top {
   display: hidden;
-}
-#logo {
+}*/
+/*#logo-wrapper h1 {
+  font-size: 1.8rem;
+  color: #EFEFEF;
+  background-color: black;
+}*/
+
+/*#logo {
  display: block;
  margin: auto;
  width: 100%;
  max-width: 1000px;
  padding-top: 6%;
- background-color: slategrey;
-}
-*/
+ background-color: black;
+}*/
+
 
 /* ----social media---- */
-/*
+
 #social-wrapper {
   background-color: black;
 }
@@ -608,7 +585,7 @@ h3 {
   display: grid;
   list-style: none;
   padding: 0px;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 1em;
 }
 #social li {
@@ -624,57 +601,27 @@ h3 {
   overflow: hidden;
 }
 #fbsm {
-  background:url('./smicons/facebook.png');
+  background:url('./smicons/Facebook_Logo_Primary.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 #fbsm:hover {
-  background:url('./smicons/facebook-hover.gif');
+  background:url('./smicons/Facebook_Logo_Secondary.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
-}
-#bcsm {
-  background:url('./smicons/bandcamp.png');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;  
-}
-#bcsm:hover {
-  background:url('./smicons/bandcamp-hover.gif');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;    
 }
 #insm {
-  background:url('./smicons/instagram.png');
+  background:url('./smicons/Instagram_Glyph_Gradient.png');
   background-repeat: no-repeat;
-  background-size: 100% 100%;   
+  background-size: 100% 100%;
 }
 #insm:hover {
-  background:url('./smicons/instagram-hover.gif');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;    
-}
-#ytsm {
-  background:url('./smicons/youtube.png');
+  background:url('./smicons/Instagram_Glyph_White.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
-}
-#ytsm:hover {
-  background:url('./smicons/youtube-hover.gif');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;    
-}
-#rvsm {
-  background:url('./smicons/reverb.png');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-#rvsm:hover {
-  background:url('./smicons/reverb-hover.gif');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;    
 }
 
-#bgimage { 
+#bannerimage { 
   display: block;
   margin: auto;
   position: relative;
@@ -684,11 +631,10 @@ h3 {
   z-index: -1;
   bottom: 0;
 }
-#bgimage img {
+#bannerimage img {
   position: absolute;
   bottom: 0;
 }
-*/
 
 /* ----footer---- */
 .footer {
@@ -700,16 +646,19 @@ h3 {
   width: 100%;
   text-align: center;
   font-style: italic;
-  background-color: slategrey;
+  background-color: #CDE;
+}
+.footer p {
+  color: black;
 }
 
 /*--- content ---*/
-/*
+
 #About {
   display: block;
   position: relative;
 }
-#About p {
+p {
   margin-left: 5%;
   margin-right: 5%;
   text-align: justify;
@@ -726,9 +675,6 @@ h3 {
   position: relative;
   visibility: hidden;
 }
-#flavour {
-  font-style: italic;
-}
 
 #Releases {
   background:url('./gallery/GeddonSky.jpg');
@@ -737,15 +683,7 @@ h3 {
   background-size: 100% auto;
   min-height: 100vh;
 }
-
-#Video {
-  background:url('./gallery/GeddonTelly.jpg');
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: 100% auto;
-  min-height: 100vh;
-}
-
+/*
 #Gallery img {
   display: block;
   position: relative;
@@ -756,12 +694,6 @@ h3 {
   color: white;
   font-size: 15px;
   text-align: center;
-}
-
-#signup {
- display: block;
- width: 100%;
- border: none;
 }
 */
 
@@ -824,25 +756,19 @@ h3 {
 .video-grid h2 {
   text-align: center;
 }
+*/
 
 @media (max-width: 550px) {
   .release-grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
-  .video-grid {
-    grid-template-columns: repeat(1, minmax(300px, 1fr));
-  }
   .service-grid {
     grid-template-columns: repeat(1, minmax(240px, 1fr));
   }
-  .page-label {
-    background-attachment: scroll !important;
-    background-size: 100% !important;
-  }
 }
+
 @media (max-width: 480px) {
   #social ul {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-*/
