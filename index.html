@@ -54,7 +54,6 @@ xmlns:fb="http://ogp.me/ns/fb#">
 				<a href="#home"><h3>Home</h3></a>
 				<a href="#about" id="nav-about"><h3>About</h3></a>
 				<a href="#gallery" id="nav-gallery"><h3>Gallery</h3></a>
-				<a href="#releases" id="nav-releases"><h3>Releases</h3></a>
         		<a href="#members" id="nav-members"><h3>Members</h3></a>
 			</nav>
 			<!--SOCIAL MEDIA-->
@@ -65,15 +64,16 @@ xmlns:fb="http://ogp.me/ns/fb#">
 						</a></li>
 						<li><a id=insm href="https://www.instagram.com/silose8collective/">Instagram 
 						</a></li>
+						<li><a id=bcsm href="https://silo-se8.bandcamp.com/">Bandcamp 
+						</a></li>
 						<!-- -Reverb for sales
-							 -bandcamp for releases rather than a section -- or roll releases into members section
 							 -youtube for videos
-							 -livenation /songkick /gig guide for upcoming events -->
+							 -songkick events -->
 					</ul>
 				</div>
 			</nav>
 			<figure id="bannerimage-wrapper">
-				<img id="bannerimage" src="" alt="Banner Image"/>
+				<img id="bannerimage" src="./images/banner970.png" alt="Banner Image"/>
 			</figure>
 		</header>
 
@@ -86,6 +86,23 @@ xmlns:fb="http://ogp.me/ns/fb#">
 					<p>
 						Silo SE8 is a collective of musicians and performers that has been around the Deptford area for over 30 years. Currently residing in a railway arch on Resolution Way.
 					</p>
+					<figure id="about-image-grid">
+						<div class="about-row">
+							<div class="about-column">
+								<img id="aboutimg-1" src="./images/anchor-procession-2013-deptford-is-forever.png" alt="David Anchor Procession taken by Deptford is forever"/>
+								<p><i>Deptford Anchor Procession 2013 - Deptford is Forever</i></p>
+							</div>
+							<div class="about-column">
+								<img id="aboutimg-2" src="./images/jig-picture-3-AnitaStrasser.png" alt="Jack in the green, Deptford picture by Anita Strasser"/>
+								<p><i>Jack in the green, Deptford - Anita Strasser</i></p>
+							</div>
+							<div class="about-column">
+								<img id="aboutimg-3" src="./images/Elwell.JPG" alt="Elwell outside SILO"/>
+								<p><i>Elwell sitting outside Silo - Chris Proud</i></p>
+							</div>
+						</div>
+						
+					</figure>
 				</div>
 			</article>
 		</section>
@@ -94,23 +111,7 @@ xmlns:fb="http://ogp.me/ns/fb#">
 			<a class="anchor" id="gallery"></a>
 			<article>
 				<h2 class="page-label" id="label-gallery">Gallery</h2>
-			</article>
-		</section>
-
-		<section class="pages" id="Releases">
-			<a class="anchor" id="releases"></a>
-
-			<article>
-				<h2 class="page-label" id="label-releases">Releases</h2>
-				<div class="release-grid">
-					<div class="release-panel">
-						<iframe src="https://bandcamp.com/EmbeddedPlayer/album=669793830/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/transparent=true/" seamless><a href="https://harmergeddon.bandcamp.com/album/hayward-versus-harmergeddon">Hayward Versus Harmergeddon by Hayward Versus Harmergeddon</a></iframe>
-					</div>
-
-					<div class="release-panel">
-						<iframe src="https://bandcamp.com/EmbeddedPlayer/album=2819166122/size=large/bgcol=333333/linkcol=9a64ff/minimal=true/transparent=true/" seamless><a href="https://harmergeddon.bandcamp.com/album/heat-lightning">HEAT LIGHTNING by Harmergeddon</a></iframe>
-					</div>
-				</div>
+				<p>Add an image gallery here</p>
 			</article>
 		</section>
 
@@ -120,6 +121,7 @@ xmlns:fb="http://ogp.me/ns/fb#">
 				<h2 class="page-label" id="label-members">Members</h2>
 				<div> 
 					<p>Rabbit (Dave Ayleward, Tom), The Balloons (Rik, Swifty, Chris), Lello (Jet, Russell, Rachael), Nathan Greywater, 1600Eeez, Zolan Quobble, Sam, Ravi Low-Beer, Arnold Lane, Yoni Silver, Sean Noonan, Tom Moody, Nonfictional, Lamo, Dan</p>
+					<p>Add info for each member/band and their respective links</p>
 				</div>
 			</article>
 		</section>
@@ -151,14 +153,12 @@ xmlns:fb="http://ogp.me/ns/fb#">
 			var navLabels = [
 				document.getElementById("nav-about"),
 				document.getElementById("nav-gallery"),
-				document.getElementById("nav-releases"),
 				document.getElementById("nav-members")
 			];
 
 			var pageElements = [
 				document.getElementById("About"),
 				document.getElementById("Gallery"),
-				document.getElementById("Releases"),
 				document.getElementById("Members")
 			];
 			var elementRects = [];
@@ -170,7 +170,6 @@ xmlns:fb="http://ogp.me/ns/fb#">
 			var anchors = [
 				document.getElementById("about"),
 				document.getElementById("gallery"),
-				document.getElementById("releases"),
 				document.getElementById("members")
 			];
 
