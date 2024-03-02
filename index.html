@@ -22,7 +22,7 @@ xmlns:fb="http://ogp.me/ns/fb#">
 		<meta charset="UTF-8">
 
 		<!-- minified CSS
-			<style>html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}header,nav{display:block}h1{font-size:2em;margin:0.67em 0}h1,h3{color:#cccccc;font-family:Verdana,Geneva,sans-serif}figure{display:block}figure{margin:1em 40px}a{background-color:transparent;-webkit-text-decoration-skip:objects}img{border-style:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}body{background-color:black}h3{font-size:16px}.pages{min-height:100vh;margin:0}.pages h1{color:black;text-align:center;width:100%;background-color:white;padding-top:1%;padding-bottom:1%}#firstline{display:none}#top-nav{top:0;width:100%;list-style:none;text-align:center;padding-left:0;overflow:hidden;background-color:black;z-index:1}#top-nav a{display:inline-block;color:white;text-align:center;padding-left:14px;padding-right:14px;text-decoration:none;background-color:black;color:white;border:none;outline:none}#top-nav h3{color:white}#logo{display:block;margin:auto;width:100%;max-width:1000px;padding-top:6%;background-color:black}#social-wrapper{background-color:black}#social{display:table;margin:auto;padding:2% auto;background-color:black}#social ul{display:grid;list-style:none;padding:0px;grid-template-columns:repeat(6,1fr);grid-gap:1em}#social li{display:inline-block}#social li a{display:inline-block;width:60px;height:60px;border:0;text-indent:1000%;white-space:nowrap;overflow:hidden}#fbsm{background:url('./smicons/facebook.png');background-repeat:no-repeat;background-size:100% 100%}#twsm{background:url('./smicons/twitter.png');background-repeat:no-repeat;background-size:100% 100%}#bcsm{background:url('./smicons/bandcamp.png');background-repeat:no-repeat;background-size:100% 100%}#insm{background:url('./smicons/instagram.png');background-repeat:no-repeat;background-size:100% 100%}#ytsm{background:url('./smicons/youtube.png');background-repeat:no-repeat;background-size:100% 100%}#etsm{background:url('./smicons/etsy.png');background-repeat:no-repeat;background-size:100% 100%}#bgimage{display:block;margin:auto;position:relative;width:100vw;min-height:200px;max-width:1000px;z-index:-1;bottom:0}@media (max-width:480px){#social ul{grid-template-columns:repeat(3,1fr)}}</style>
+			<style></style>
 		-->
 
 		<!--Begin analytics-->
@@ -33,13 +33,13 @@ xmlns:fb="http://ogp.me/ns/fb#">
 				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-			ga('create', 'UA-106177678-1', 'auto');
+			ga('create', '', 'auto');
 			ga('send', 'pageview');
 		</script>
     -->
 		<!--End analytics-->
 		<!--
-		<meta name="google-site-verification" content="33V40XU87sHDn-ui3Te0H1bF3GZufOmT5VJtjFA53rw" />
+		<meta name="google-site-verification" content="" />
     -->
 	</head>
 
@@ -47,7 +47,12 @@ xmlns:fb="http://ogp.me/ns/fb#">
 
 		<header class="pages" id="Header">
 			<h1 id="firstline">Silo SE8 Collective</h1>
-			<div id="logo"> <h1>SILO SE8</h1> </div>
+
+			<!--LOGO-->
+			<div id="logo">
+				<img id="logoImage" src="./images/silose8logo.jpg" alt="Logo"/>
+				<h1>SILO-SE8</h1> 
+			</div>
 
 			<!--NAV-->
 			<nav id="top-nav">
@@ -56,6 +61,7 @@ xmlns:fb="http://ogp.me/ns/fb#">
 				<a href="#gallery" id="nav-gallery"><h3>Gallery</h3></a>
         		<a href="#members" id="nav-members"><h3>Members</h3></a>
 			</nav>
+
 			<!--SOCIAL MEDIA-->
 			<nav id="social-wrapper">
 				<div id="social">
@@ -66,12 +72,14 @@ xmlns:fb="http://ogp.me/ns/fb#">
 						</a></li>
 						<li><a id=bcsm href="https://silo-se8.bandcamp.com/">Bandcamp 
 						</a></li>
-						<!-- -Reverb for sales
-							 -youtube for videos
+						<!-- -Reverb for selling used kit
+							 -youtube for playlist of videos
 							 -songkick events -->
 					</ul>
 				</div>
 			</nav>
+
+			<!--Banner Image-->
 			<figure id="bannerimage-wrapper">
 				<img id="bannerimage" src="./images/banner970.png" alt="Banner Image"/>
 			</figure>
@@ -111,7 +119,32 @@ xmlns:fb="http://ogp.me/ns/fb#">
 			<a class="anchor" id="gallery"></a>
 			<article>
 				<h2 class="page-label" id="label-gallery">Gallery</h2>
-				<p>Add an image gallery here</p>
+				<div class="slideshow-container">
+					<!-- slides -->
+					<div class="slides">
+						<img src="./images/posters/siloSE8_6August.jpg">
+						<div class="text"></div>
+					</div>
+					<div class="slides">
+						<img src="./images/posters/siloSE8_26April.jpg">
+						<div class="text"></div>
+					</div>
+					<div class="slides">
+						<img src="./images/posters/siloSE8_27April.jpg">
+						<div class="text"></div>
+					</div>
+
+					<!-- next and previous buttons -->
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+				<br>
+				<!-- The dots/circles -->
+				<div style="text-align:center">
+				  <span class="dot" onclick="currentSlide(1)"></span>
+				  <span class="dot" onclick="currentSlide(2)"></span>
+				  <span class="dot" onclick="currentSlide(3)"></span>
+				</div>
 			</article>
 		</section>
 
@@ -225,6 +258,37 @@ xmlns:fb="http://ogp.me/ns/fb#">
 					anchors[i].style.top = -navSize + 1 + "px";
 				}
 			};
+		</script>
+
+		<script>
+			let slideIndex = 1;
+			showSlides(slideIndex);
+
+			// next/prev controls
+			function plusSlides(n) {
+				showSlides(slideIndex += n);
+			}
+
+			// thumbnail image controls
+			function currentSlide(n) {
+				showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+				let i;
+				let slides = document.getElementsByClassName("slides");
+				let dots = document.getElementsByClassName("dot");
+				if (n > slides.length) {slideIndex = 1}
+				if (n < 1) {slideIndex = slides.length}
+				for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+				}
+				for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex-1].style.display = "block";
+				dots[slideIndex-1].className += " active";
+			}
 		</script>
 	</body>
 </html>

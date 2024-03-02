@@ -461,17 +461,14 @@ sup {
 
 /* -----------------END RESET-------------------- */
 
-body { background-color: #abd1de; }
-
+body { background-color: #00415a; }
 h1 { font-size: 4em; }
-
 h2 { font-size: 3em; }
-
 h3 { font-size: 1.1em; }
 
 p { 
   font-size: 1.1em; 
-  color: black;
+  color: #ffffff;
 }
 
 #firstline {
@@ -491,10 +488,11 @@ p {
   padding-bottom: 1%;
 }
 
-/* logo */
-
+/* ----logo---- */
 #logo {
   padding: 0;
+  display: block;
+  margin: auto;
 }
 #logo h1 {
   color: #FF474D;
@@ -502,9 +500,15 @@ p {
   margin: 0;
   text-align: center;
 }
+#logo img {
+  position: absolute;
+  width: auto;
+  max-height: 64px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
 
 /* ----top nav---- */
-
 #top-nav {
   top: 0;
   width: 100%;
@@ -554,7 +558,6 @@ p {
 }
 
 /* ----social media---- */
-
 #social-wrapper {
   background-color: black;
 }
@@ -615,7 +618,9 @@ p {
 }
 
 /* Image banner */
-
+#bannerimage-wrapper {
+  margin: 0;
+}
 #bannerimage { 
   display: block;
   margin: auto;
@@ -631,7 +636,7 @@ p {
   bottom: 0;
 }
 
-/* About image grid */
+/* ----About image grid---- */
 .about-row {
   display: flex;
   flex-wrap: wrap;
@@ -654,25 +659,7 @@ p {
   }
 }
 
-/* ----footer---- */
-.footer {
-  position: relative;
-  height: 60px;
-  bottom: 0;
-  left: 0;
-  padding-top: 0%;
-  width: 100%;
-  text-align: center;
-  font-style: italic;
-  background-color: black;
-}
-.footer p {
-  color: white;
-  text-align: center;
-}
-
 /*--- content ---*/
-
 #About {
   display: block;
   position: relative;
@@ -695,16 +682,97 @@ p {
   visibility: hidden;
 }
 
-#Releases {
-  background:url('./gallery/GeddonSky.jpg');
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: 100% auto;
-  min-height: 100vh;
+/* ----Gallery---- */
+.slideshow-container {
+  max-width: 100vh;
+  position: relative;
+  margin: auto;
+}
+.slides {
+  display: none;
+}
+.slides img {
+  max-height: 80vh;
+  display: block;
+  margin: auto;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  width: auto;
+  margin-top: -20px;
+  padding: 40vh 16px 40vh 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: black;
+  border-radius: 0;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #FF474D;
 }
 
+/* ----footer---- */
+.footer {
+  position: relative;
+  height: 80px;
+  bottom: 0;
+  left: 0;
+  padding-top: 0%;
+  width: 100%;
+  text-align: center;
+  font-style: italic;
+  background-color: #000d12;
+}
+.footer p {
+  color: white;
+  text-align: center;
+}
+
+/* ----Media calls---- */
 @media (max-width: 480px) {
   #social ul {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  #logoImage {
+    display: none;
   }
 }
